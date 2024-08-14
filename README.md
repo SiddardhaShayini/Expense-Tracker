@@ -23,4 +23,4 @@ A user-friendly expense tracker application designed to help you manage your fin
 ### Installation
 
 1. Clone the repository:
-   https://github.com/SiddardhaShayini/FashionMate.git
+   https://github.com/SiddardhaShayini/Expense-Tracker
