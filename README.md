@@ -24,3 +24,11 @@ A user-friendly expense tracker application designed to help you manage your fin
 
 1. Clone the repository:
    https://github.com/SiddardhaShayini/Expense-Tracker
+2. Navigate to the project directory:
+   cd Expense-Tracker
+3. Open 'index.html' in your preferred web browser to run the application.
+
+### Usage
+Add Transaction: Use the form on the main page to input your income or expense details.
+View History: Check the transaction history to analyze your spending.
+Customize: Modify script.js and styles.css to fit your needs and preferences.
