@@ -29,6 +29,6 @@ A user-friendly expense tracker application designed to help you manage your fin
 3. Open 'index.html' in your preferred web browser to run the application.
 
 ### Usage
-Add Transaction: Use the form on the main page to input your income or expense details.
-View History: Check the transaction history to analyze your spending.
-Customize: Modify script.js and styles.css to fit your needs and preferences.
+1. Add Transaction: Use the form on the main page to input your income or expense details.
+2. View History: Check the transaction history to analyze your spending.
+3. Customize: Modify script.js and styles.css to fit your needs and preferences.
