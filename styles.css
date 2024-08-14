@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF5722;
+    --dark-bg-color: #121212;
+    --dark-text-color: #f4f4f4;
+    --light-bg-color: #f4f4f4;
+    --light-text-color: #333;
+    --border-radius: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a, .menu select, .menu button {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.currency-dropdown:focus {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.container {
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    background: var(--light-bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.balance {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#balance {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary div {
+    background: var(--light-bg-color);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.money {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.plus {
+    color: var(--primary-color);
+}
+
+.minus {
+    color: var(--secondary-color);
+}
+
+.history {
+    margin: 20px 0;
+    display: none;
+}
+
+.history h3 {
+    border-bottom: 2px solid var(--light-bg-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    background: #fff;
+    padding: 10px;
+    border-left: 5px solid;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list li.plus {
+    border-left-color: var(--primary-color);
+}
+
+.list li.minus {
+    border-left-color: var(--secondary-color);
+}
+
+.list li .delete-btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-transaction {
+    margin-top: 30px;
+}
+
+.add-transaction h3 {
+    border-bottom: 2px solid var(--light-bg-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.add-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+.dark-mode .container,
+.dark-mode .summary div,
+.dark-mode .list li {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+.dark-mode .form-control input {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+    border: 1px solid #666;
+}
